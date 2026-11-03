@@ -1,0 +1,9 @@
+t = int(input())
+
+for i in range(t):
+    letter = input()
+
+    if letter in "codeforces":
+        print("YES")
+    else:
+        print("NO")
