@@ -1,0 +1,13 @@
+t = int(input())
+
+for i in range(t):
+    a, b = map(int, input().split())
+
+    diff = abs(a - b)
+
+    moves = diff // 10
+
+    if diff % 10 != 0:
+        moves += 1
+
+    print(moves)
