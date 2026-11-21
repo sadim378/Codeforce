@@ -4,14 +4,14 @@ for i in range(t):
     n = int(input())
     s = input()
 
-    seen = set()
-    total = 0
+    solved = []
+    balloons = 0
 
-    for ch in seen:
-        if ch not in seen:
-            total += 2
-            seen.add(ch)
+    for ch in s:
+        if ch not in solved:
+            balloons += 2
+            solved.append(ch)
         else:
-            total += 1
+            balloons += 1
 
-    print(total)
+    print(balloons)
